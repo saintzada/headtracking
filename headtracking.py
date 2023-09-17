@@ -9,10 +9,10 @@ def authenticate_user(username, password, auth_data):
     return False
 
 # URL do Pastebin que contém o JSON de autenticação
-pastebin_login_url = "https://pastebin.com/raw/URL_DO_JSON_DE_LOGIN"
+pastebin_login_url = "https://pastebin.com/raw/fArbGgkR"
 
 # URL do Pastebin que contém o código Python
-pastebin_code_url = "https://pastebin.com/raw/URL_DO_CODIGO_PYTHON"
+pastebin_code_url = "https://pastebin.com/raw/gF7tyWCf"
 
 # Faça uma solicitação GET para obter o JSON de autenticação
 response = requests.get(pastebin_login_url)
