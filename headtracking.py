@@ -27,17 +27,15 @@ if response.status_code == 200:
         if authenticate_user(username, password, auth_data):
             print("Login bem-sucedido!")
 
-          
+            # Verifique se a solicitação foi bem-sucedida
             if response.status_code == 200:
                 python_code = response.text
 
-             
+                # Use a função platform.platform() para obter informações sobre o dispositivo
                 device_info = platform.platform()
                 print(f"Modelo do dispositivo: {device_info}")
 
-                break
-            else:
-                print("Não foi possível obter o código Python do Pastebin.")
+            break
         else:
             print("Login falhou. Por favor, verifique seu nome de usuário e senha.")
 
